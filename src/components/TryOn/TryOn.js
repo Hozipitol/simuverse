@@ -20,6 +20,9 @@ const TryOn = () => {
             console.log(e.target.files[0]);
         }
     }
+    const handleSubmit = (e) => {
+        console.log("hello");
+    }
     return (
         <>
             <div className="try">
@@ -46,6 +49,7 @@ const TryOn = () => {
                     </div>
                 </div>
             </div>
+            <button onClick={handleSubmit}>Get your Image</button>
         </>
     )
 }
