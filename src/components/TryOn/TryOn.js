@@ -1,27 +1,38 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './TryOn.css';
 import Profile from '../../images/upload.png'
 
 const TryOn = () => {
+    const [file1,setFile1]= useState("");
+    const [file2,setFile2]= useState("");
+   
     const firstImageHandler = (e) => {
+        
         if (e.target.files.length > 0) {
             var src = URL.createObjectURL(e.target.files[0]);
             var preview = document.getElementById("image-preview");
             preview.src = src;
-            console.log(e.target.files[0]);
+            setFile1(src);
+            console.log(e.target.files[0])
         }
+    
+        
     }
 
     const secondImageHandler = (e) => {
+        
         if (e.target.files.length > 0) {
             var src = URL.createObjectURL(e.target.files[0]);
             var preview = document.getElementById("image-preview-two");
             preview.src = src;
+            setFile2(src);
             console.log(e.target.files[0]);
         }
     }
     const handleSubmit = (e) => {
-        console.log("hello");
+        var blop =[file1,file2]
+        console.log(blop);
+    
     }
     return (
         <>
@@ -29,7 +40,7 @@ const TryOn = () => {
                 <div className="box">
                     
                     <input type="file" name='image-uploader' onChange={firstImageHandler} id='image-uploader' accept='image/*' />
-                    <label htmlFor="image-uploader" className='browse'>Upload Image</label>
+                    <label htmlFor="image-uploader" className='browse'>Upload Your Image</label>
                     <br />
                     <br />
 
@@ -41,7 +52,7 @@ const TryOn = () => {
                 <div className="box">
                     
                     <input type="file" name='image-uploader-two' onChange={secondImageHandler} id='image-uploader-two' accept='image/*' />
-                    <label htmlFor="image-uploader-two" className='browse'>Upload Image</label>
+                    <label htmlFor="image-uploader-two" className='browse'>Upload Cloth Image</label>
                     <br />
                     <br />
                     <div className='preview-try'>
