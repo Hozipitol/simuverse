@@ -11,6 +11,7 @@ function App() {
       <Homebar />
       <BrowserRouter>
         <Switch>
+          <Route exact path="/simuverse" component={Home}/>
           <Route exact path="/" component={Home}/>
           <Route path="/home" component={Home}/>
           <Route path="/about" component={About}/>
