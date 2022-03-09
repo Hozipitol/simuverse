@@ -8,8 +8,11 @@ const TryOn = () => {
    
     const firstImageHandler = (e) => {
         
+<<<<<<< HEAD
         
        
+=======
+>>>>>>> 7bdfb1d41bb3ae1e759c840a28e59864bd737245
         if (e.target.files.length > 0) {
             var src = URL.createObjectURL(e.target.files[0]);
             var preview = document.getElementById("image-preview");
@@ -42,7 +45,7 @@ const TryOn = () => {
                 <div className="box">
                     
                     <input type="file" name='image-uploader' onChange={firstImageHandler} id='image-uploader' accept='image/*' />
-                    <label htmlFor="image-uploader" className='browse'>Upload Image</label>
+                    <label htmlFor="image-uploader" className='browse'>Upload Your Image</label>
                     <br />
                     <br />
 
@@ -54,7 +57,7 @@ const TryOn = () => {
                 <div className="box">
                     
                     <input type="file" name='image-uploader-two' onChange={secondImageHandler} id='image-uploader-two' accept='image/*' />
-                    <label htmlFor="image-uploader-two" className='browse'>Upload Image</label>
+                    <label htmlFor="image-uploader-two" className='browse'>Upload Cloth Image</label>
                     <br />
                     <br />
                     <div className='preview-try'>
