@@ -1,0 +1,11 @@
+.c1{
+    background-image: linear-gradient(to left,#abbaab, #ffffff );
+    color: #000;
+    padding: 1%;
+}
+
+.c2{
+    background-image: linear-gradient(to right,#83a4d4, #b6fbff );
+    color: #000;
+    padding: 1%;
+}
