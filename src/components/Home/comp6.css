@@ -1,0 +1,119 @@
+.comp6_container{
+    min-height:100vh;
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+
+.comp6_wrapper{
+    display:grid;
+    grid-template-areas: 
+    'title title title'
+    'model body body'
+    'model body body'
+    ;
+    row-gap: 4rem;
+    column-gap: 3rem;
+}
+
+.comp6_wrapper-title{
+    grid-area: title;
+    font-size: 2.5rem;
+    font-weight: 600;
+   
+}
+.comp6_wrapper-model{
+    overflow: hidden;
+    grid-area:model;
+    margin-left:4rem;
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+    color:white;
+    box-shadow:1px 1px 6px 1px rgba(0,0,0,0.7) ; 
+}
+.comp6_wrapper-model img{
+    height:100%;
+    width: 100%;
+}
+.comp6_wrapper-body{
+    grid-area: body;
+    text-align: left;
+}
+.comp6_wrapper-body p{
+    font-size: 20px;
+
+}
+.comp6_wrapper-body h2{
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+}
+
+@media (max-width: 1000px){
+    
+    .comp6_wrapper{
+        padding:0 20px 20px 20px;
+        display:grid;
+        grid-template-areas: 
+        ' title title title title'
+        ' other model model blank'
+        ' body body body body'
+        ;
+    }
+    .comp6_wrapper-title{
+        grid-area: title;
+       
+    }
+    .comp6_wrapper-model{
+        grid-area:model;
+    }
+   
+    .comp6_wrapper-body{
+        grid-area: body;
+    }
+}
+@media (max-width: 780px){
+    
+    .comp6_wrapper{
+        padding:0 20px 20px 20px;
+        display:grid;
+        grid-template-areas: 
+        ' title title title title title'
+        ' other model model model blank'
+        ' body body body body body'
+        ;
+    }
+    .comp6_wrapper-title{
+        grid-area: title;
+       
+    }
+    .comp6_wrapper-model{
+        grid-area:model;
+    }
+   
+    .comp6_wrapper-body{
+        grid-area: body;
+    }
+}
+@media (max-width: 650px){
+    
+    .comp6_wrapper{
+        padding:0 20px 20px 20px;
+        display:grid;
+        grid-template-areas: 
+        ' title title title title title title title'
+        ' other model model model model model blank'
+        ' body body body body body body body'
+        ;
+    }
+    .comp6_wrapper-title{
+        grid-area: title;
+       
+    }
+    .comp6_wrapper-model{
+        grid-area:model;
+    }
+   
+    .comp6_wrapper-body{
+        grid-area: body;
+    }
+}
