@@ -16,9 +16,9 @@ import AnimatedProgressProvider from "./AnimatedProgressProvider";
 const Growth = () => {
     
     return(
-  <div style={{padding: "40px 40px 40px 40px"}}>
+  <div style={{padding: "4%"}}>
     <h1 style={{textAlign:"center"}}>Growth in Fashion Market</h1>
-  <div style={{  display:"flex" }}>
+  <div style={{  display:"flex", justifyContent:"center" }}>
    
 
     <div style={{margin:"10px"}}>

@@ -24,7 +24,7 @@ function Retail() {
     <h1 style={{textAlign:"center"}}>Online Retail boom</h1>
 
     <h4>Gross Merchandise Value(GMV) for e-retail sector(in $bn)</h4>
-    <div style={{height:"70vh", width:"80vw"}}>
+    <div style={{height:"70vh", padding:"2%", justifyContent:"center"}}>
         <Bar
           data={dataBar}
         //   width={100}

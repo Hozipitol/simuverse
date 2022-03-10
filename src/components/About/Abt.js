@@ -3,6 +3,10 @@ import './Abt.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import pic1 from '../../images/Picture1.jpg'
 import pic2 from '../../images/Picture2.png'
+import t1 from '../../images/t1.png'
+import t2 from '../../images/t2.png'
+import t3 from '../../images/t3.png'
+import t4 from '../../images/t4.png'
 function Abt() {
   return (
     <div>
@@ -57,7 +61,7 @@ function Abt() {
         <div class="col-lg-8 ">
             <p class="para2">
                 <br/>
-              SimuVerse’s digital modelling software will allow your retail business to design photorealistic products quickly and remotely.
+              SimuVerse's digital modelling software will allow your retail business to design photorealistic products quickly and remotely.
          
               <h5>Sustainable Supply Chain</h5>
               Become a driving force in the push for sustainable fashion with a digital supply chain that significantly reduces material waste.
@@ -75,6 +79,44 @@ function Abt() {
             </p>
         </div>
        </div>
+       </div>
+       <div class="container-fluid c1">
+      <div class="row"> 
+     <div class="col-sm-12">  
+
+     <h2>How is SimuVerse Different ?
+ </h2>
+      </div>
+      <hr/>
+      <div class="col-sm-12">  
+
+     <h3>General Software / AR Based Try - On </h3>
+      </div>
+     </div>
+
+
+     <div class="row"> 
+        <div class="col-md-6">
+            <img src={t1} width="80%" />
+        </div>
+        <div class="col-md-6 ">
+        <img src={t2} width="80%" />
+        </div>
+       </div>
+        <div class="col-sm-12">  
+
+          <h3>SimuVerse Intelligent Engine with Deep Learning
+ </h3>
+           </div>
+       <div class="row"> 
+        <div class="col-md-6">
+            <img src={t3} width="80%" />
+        </div>
+        <div class="col-md-6 ">
+        <img src={t4} width="80%" />
+        </div>
+       </div>
+
        </div>
     </div>
     

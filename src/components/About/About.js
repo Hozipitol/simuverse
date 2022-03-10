@@ -15,11 +15,21 @@ function About() {
   return (
     <div>
     <Abt />
+   <div className="c3">
     <Revenue />
+    </div>
+    <div className="c2">
     <Growth />
+    </div>
+    <div className="c3">
     <Retail />
+    </div>
+    <div className="c1">
     <Return />
+    </div>
+    <div className="c3">
     <ReturnReason />
+    </div>
     </div> 
   )
 }
