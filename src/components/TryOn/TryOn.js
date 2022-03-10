@@ -8,6 +8,11 @@ const TryOn = () => {
    
     const firstImageHandler = (e) => {
         
+<<<<<<< HEAD
+        
+       
+=======
+>>>>>>> 7bdfb1d41bb3ae1e759c840a28e59864bd737245
         if (e.target.files.length > 0) {
             var src = URL.createObjectURL(e.target.files[0]);
             var preview = document.getElementById("image-preview");

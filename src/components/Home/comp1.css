@@ -1,0 +1,159 @@
+/*------------------------whole body------------------------*/
+
+.comp1_container{
+    margin:0 auto;
+    min-height:100vh;
+    font-family: sans-serif ;
+    margin:0 0 0 0;
+    color:gray;
+    
+    
+}
+     /*------------------------ mini backround image------------------------------- */
+.comp1_background{
+    width: 100%;
+    min-height: 60vh;
+    background: radial-gradient(ellipse at center, #2a2325 0%, #201d1e 100%);
+    position:absolute;
+    width:100%;
+    z-index: -1;
+}
+ 
+    /* ------------------------------heading---------------------------------- */
+.simu{
+    color:red;
+    display: inline;
+}
+
+.comp1_Header_container{
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 0;
+    
+
+}
+.comp1_Header{
+    font-size: 2.5;
+    font-weight: 600;
+    min-height:10vh;
+    width:100%;
+    padding-top:10px;
+    font-weight: 400;
+    color: white;
+    font-family: sans-serif;
+    /* text-shadow: 1px 1px 5px maroon, -1px -1px  5px maroon; */
+    justify-content: center;
+        
+}
+.comp1_Header span{
+    display:block;
+}
+.comp1_Sub-Header{
+    max-width: 100%;
+    min-height:100px;
+    display:flex-wrap;
+    justify-content: center;
+    
+    font-weight: 100px;
+    font-size:18px;
+    margin:0 5% 0 5% ;
+    font-weight: 400;
+    padding:0 10px 0 10px; 
+    text-align: left; 
+    
+}
+    /* -------------------show more function ---------------------------*/
+.Hide{
+    position: relative;
+}
+.More{
+    display:none;
+}
+
+.showMore{
+    color:red;
+}
+.showMore:hover{
+    cursor:pointer;
+}
+    /* -----------Body-------------------- */
+.comp1_body{
+    margin-top: 2rem;
+    position:relative;
+    min-height:520px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    row-gap: 10px;
+    column-gap: 0px;
+    padding:0 30px 0 10%;
+    margin-left: 5%;
+    
+}
+.comp1_body aside{
+    
+    margin-top: 2rem;
+    padding:0;
+    width: 80%;
+    height:80%;
+    max-width: 320px;
+    min-width: 260px;
+    min-height: 300px;
+    box-shadow:1px 1px 6px 1px rgba(0,0,0,0.7) ; 
+    overflow: hidden;
+    border-radius: 0% 0% 0 0;
+}
+.comp1_body aside:hover{
+    cursor:pointer;
+}
+
+.comp1_body h2{
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+
+
+    height:23%;
+    margin:0;
+    font-weight: 1.5rem;
+    color:white;
+    z-index: -1;
+}
+.comp1_body h2 span{
+    display:block;
+}
+.comp1_body img{
+    z-index:1;
+    width: 100%;
+    height: 80%;
+  
+    
+}
+
+@media (max-width: 900px) {
+   .comp1_background{
+       min-height: 70vh;
+   }
+
+    .comp1_Sub-Header{
+        font-weight:100;
+        padding:0;
+    }
+   
+    .comp1_body{
+        margin-top:2rem;
+        display:flex-wrap;
+        padding:0;
+        justify-content: center;
+    }
+    .comp1_body aside{
+        margin: 0 0 2rem 0;
+    }
+
+    
+    
+}
+@media (max-width: 650px){
+    .comp1_background{
+        height:80vh;
+    }
+}

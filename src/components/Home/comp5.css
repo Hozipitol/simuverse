@@ -1,0 +1,135 @@
+.comp5_container{
+   padding: 0 5% 0 5%;
+   color:white;
+   background: radial-gradient(ellipse at center, #2a2325 0%, #201d1e 100%);
+   height: calc(100vh+(24-18)*(100vw - 600px)/(1200 - 600) );
+   font-family: sans-serif;
+   
+}
+.comp5_wrapper{
+    height: 90vh;
+    width:100%;
+    display:grid;
+    grid-template-areas: 
+        'title title title title'
+        'a b c d'
+        'a e e e'
+    ;
+}
+.comp5_wrapper .header{
+    grid-area: title;
+    color:red;
+   
+}
+.comp5_wrapper .one{
+    grid-area: a;
+    
+}
+.comp5_wrapper .one img{
+    height:80%;
+}
+.comp5_wrapper .two{
+    grid-area: b;
+}
+.comp5_wrapper .three{
+    grid-area: c;
+}
+.comp5_container .four{
+    grid-area: d;
+}
+.comp5_container .five{
+    grid-area: e;
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+}
+.comp5_container img{
+    box-shadow: 0 0 5px 1px rgb(153, 151, 151);
+}
+
+
+
+
+
+
+@media ( max-width:1120px){
+    .comp5_container{
+        padding: 0;
+        height:100vh;
+    }
+    .comp5_wrapper{
+        display: grid;
+        grid-template-areas:
+        'h h h'
+        'a b c'
+        'a d  d'
+        'e e e'
+        ;
+    }
+    .comp5_wrapper .header{
+        grid-area: h;
+    }
+.comp5_wrapper .one{
+    grid-area: a;
+    
+}
+.comp5_wrapper .one img{
+    height:80%;
+}
+.comp5_wrapper .two{
+    grid-area: b;
+}
+.comp5_wrapper .three{
+    grid-area: c;
+}
+.comp5_container .four{
+    grid-area: d;
+}
+.comp5_container .five{
+    grid-area: e;
+    list-style-type: none;
+    text-align: left;
+    font-size: 16px;
+}
+}
+@media ( max-width:650px){
+    .comp5_container{
+        padding: 0;
+        height:130vh;
+    }
+    .comp5_wrapper{
+        display: grid;
+        grid-template-areas:
+        'h h'
+        'a b'
+        'a c'
+        'd d'
+        'e e '
+        ;
+    }
+    .comp5_wrapper .header{
+        grid-area: h;
+    }
+.comp5_wrapper .one{
+    grid-area: a;
+    
+}
+.comp5_wrapper .one img{
+    height:80%;
+}
+.comp5_wrapper .two{
+    grid-area: b;
+}
+.comp5_wrapper .three{
+    grid-area: c;
+}
+.comp5_container .four{
+    grid-area: d;
+}
+.comp5_container .five{
+    grid-area: e;
+    list-style-type: none;
+    text-align: left;
+    font-size: 16px;
+}
+}
