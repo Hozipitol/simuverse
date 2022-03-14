@@ -4,7 +4,7 @@ import Component2 from './Component2';
 import Component3 from './Component3';
 import Component4 from './Component4';
 import Component5 from './Component5';
-import Component6 from './Component6';
+// import Component6 from './Component6';
 import Icon, {UpOutlined } from '@ant-design/icons'
 import './home.css';
 function Home() {
@@ -33,8 +33,8 @@ function Home() {
       <Component3 />
       <Component4 />
       <Component5 />
-      <Component6 />
-      {console.log(height)}
+      {/* <Component6 /> */}
+      
       {height > 200? <div className='scroll-top' onClick={scrollToTop}> <Icon component={UpOutlined} style={{fontSize:"15px", color:"white"}} /></div>: <div></div>} 
     </div>
   )

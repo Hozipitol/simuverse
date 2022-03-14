@@ -1,5 +1,6 @@
-import React from 'react'
-import './About.css'
+import React,{useState, useEffect} from 'react';
+import Icon, {UpOutlined } from '@ant-design/icons';
+import './About.css';
 import Growth from './Charts/Growth';
 import Retail from './Charts/Retail';
 import Return from './Charts/Return';
@@ -12,6 +13,26 @@ import Abt from './Abt'
 
 
 function About() {
+
+  const[height, setHeight] = useState(0);
+  
+  useEffect(() => {            // function to check the scroll height  
+    const onScroll = () => setHeight(window.pageYOffset);
+    console.log(height);
+    // ------------------clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+}, [height]);
+
+//------------------scroll to top function
+const scrollToTop = () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+  });
+};
+
   return (
     <div>
     <Abt />
@@ -20,6 +41,7 @@ function About() {
     <Retail />
     <Return />
     <ReturnReason />
+    {height > 200? <div className='scroll-top' onClick={scrollToTop}> <Icon component={UpOutlined} style={{fontSize:"15px", color:"white"}} /></div>: <div></div>} 
     </div> 
   )
 }
