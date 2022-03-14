@@ -3,6 +3,10 @@ import './Abt.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import img3 from '../../images/Home/img3.png'
 import pic2 from '../../images/Picture2.png'
+import t1 from '../../images/t1.png'
+import t2 from '../../images/t2.png'
+import t3 from '../../images/t3.png'
+import t4 from '../../images/t4.png'
 function Abt() {
   return (
     <div className='abt_container'>

@@ -36,14 +36,24 @@ const scrollToTop = () => {
   return (
     <div>
     <Abt />
+   <div className="c3">
     <Revenue />
+    </div>
+    <div className="c2">
     <Growth />
+    </div>
+    <div className="c3">
     <Retail />
+    </div>
+    <div className="c1">
     <Return />
+    </div>
+    <div className="c3">
     <ReturnReason />
     {height > 200? <div className='scroll-top' onClick={scrollToTop}> <Icon component={UpOutlined} style={{fontSize:"15px", color:"white"}} /></div>: <div></div>} 
     </div> 
+    </div>
   )
 }
 
-export default About
+export default About;
